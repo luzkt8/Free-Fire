@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#071522">
+  <title>BERMUDA 3D | Battle Royale</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://cdn.babylonjs.com/babylon.js"></script>
+</head>
+
+<body>
+  <main id="game">
+    <canvas id="gameCanvas"></canvas>
+
+    <section id="loadingScreen">
+      <h1>BERMUDA <span>3D</span></h1>
+      <p>PREPARANDO EL CAMPO DE BATALLA</p>
+      <div class="loading-track">
+        <div id="loadingProgress"></div>
+      </div>
+    </section>
+
+    <section id="mainMenu">
+      <div class="menu-content">
+        <p class="edition">ULTIMATE BATTLE ROYALE</p>
+        <h1>BERMUDA <span>3D</span></h1>
+        <p class="description">ONE ISLAND. ONE WINNER.</p>
+        <button id="startButton">JUGAR</button>
+        <p class="players">20 PARTICIPANTES · 1 ISLA</p>
+      </div>
+    </section>
+
+    <section id="gameHUD" class="hidden">
+      <header class="top-bar">
+        <div class="logo">BERMUDA <span>3D</span></div>
+        <div id="matchStats">
+          <span>VIVOS: <b id="aliveCount">20</b></span>
+          <span>ELIMINACIONES: <b id="killCount">0</b></span>
+        </div>
+      </header>
+
+      <div id="healthPanel">
+        <p>SALUD <span id="healthValue">100</span></p>
+        <div class="health-track"><div id="healthBar"></div></div>
+        <p>ESCUDO <span id="shieldValue">100</span></p>
+        <div class="shield-track"><div id="shieldBar"></div></div>
+      </div>
+
+      <div id="crosshair">+</div>
+
+      <div id="mapPanel">
+        <canvas id="miniMap"></canvas>
+      </div>
+
+      <div id="weaponPanel">
+        <p>ENERGY PULSE</p>
+        <strong>∞</strong>
+        <button id="shootButton">DISPARAR</button>
+      </div>
+
+      <div id="controlHelp">
+        WASD: MOVER · SHIFT: CORRER · SPACE: SALTAR
+      </div>
+
+      <button id="pauseButton">Ⅱ</button>
+    </section>
+
+    <section id="pauseMenu" class="overlay hidden">
+      <div class="dialog">
+        <h2>PAUSA</h2>
+        <button id="continueButton">CONTINUAR</button>
+        <button id="restartButton">REINICIAR</button>
+      </div>
+    </section>
+
+    <section id="endMenu" class="overlay hidden">
+      <div class="dialog">
+        <h2 id="endTitle">PARTIDA TERMINADA</h2>
+        <p id="endDescription"></p>
+        <button id="againButton">VOLVER A JUGAR</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="game.js"></script>
+</body>
+</html>

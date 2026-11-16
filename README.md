@@ -1,9 +1,4 @@
 # Free-Fire
-¡SIIIIII! 💗🔥 Aquí tienes la propuesta completamente en inglés, con una imagen de referencia del mapa, lista para mostrarle a tu profesor.
-
-# FREE-FIRE
-
-GAME PROPOSAL · FIRST VERSION
 
 [Nova atualização do Free Fire traz áreas inéditas para o mapa Bermuda](https://images.openai.com/static-rsc-4/YdslebaKdd7shJNNCX9qqG23EUY1qbMnBuGueC5WWsjf0w5seBlnt5JfyZ3ztZZhXxT3Aa8Hwgc_BtBT_X4lhIOW0PdOfmmcYTbD-2wQRiv47bse3a4TDLccd_GVt60_bKkKwghIgbetm-X7YYfv_VJWV-E8yTg6XN7GAItPfR4?purpose=inline)
 
